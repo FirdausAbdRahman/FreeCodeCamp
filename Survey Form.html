@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+    <div id="form">
+        <p id="description">Work and life balance</p>
+        <form id="survey-form" method="GET" action="#">
+            <div id="rowTab">
+                <div id="labels">
+                    <label id="name-label">*Name: </label>
+                </div>
+                <div id="rightTab">
+                    <input autofocused type="text" id="name" class="input-field" placeholder="Enter your name here." required>
+                </div>
+            </div>
+            <div id="rowTab">
+                <div id="labels">
+                    <label id="email-label">*Email: </label>
+                </div>
+                <div id="rightTab">
+                    <input type="email" id="email" class="input-field" placeholder="Enter your email here." required>
+                </div>
+            </div>
+            <div id="rowTab">
+                <div id="labels">
+                    <label id="number-label">Age: </label>
+                </div>
+                <div id="rightTab">
+                    <input type="number" id="number" class="input-field" max="3" min="1" placeholder="Enter your age here.">
+                </div>
+            </div>
+            <div id="rowTab">
+                <div id="labels">
+                    <label for="exprience">What is your exprience level: </label>
+                </div>
+                <div id="rightTab">
+                    <select id="dropdown" class="dropdown">
+                        <option disabled value>Select an option</option>
+                        <option value="Entry">Entry Level</option>
+                        <option value="Mid">Mid Level</option>
+                        <option value="Senior">Senior Level</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div id="rowTab">
+                <div id="labels">
+                    <label for="balance">Do you think you have work and life balance? </label>
+                </div>
+                <div id="rightTab">
+                    <ul id="balance" style="list-style: none;">
+                        <li class="radio">
+                            <input name="radio-buttons" value="Yes" type="radio" class="userRatings"> Yes
+                        </li>
+                        <li class="radio">
+                            <input name="radio-buttons" value="No" type="radio" class="userRatings"> No
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="rowTab">
+                <div id="labels">
+                    <label for="maintain">How do you maintain a good work life balance?
+                        <br>(Check all that apply): </label>
+                </div>
+                <div id="rightTab">
+                    <ul id="maintain" style="list-style: none;">
+                        <li class="checkbox">
+                            <input type="checkbox" value="1"> Play to your strengths.
+                        </li>
+                        <li class="checkbox">
+                            <input type="checkbox" value="2"> Prioritise your time.
+                        </li>
+                        <li class="checkbox">
+                            <input type="checkbox" value="3"> Know your peaks and troughs.
+                        </li>
+                        <li class="checkbox">
+                            <input type="checkbox" value="4"> Plot some personal time.
+                        </li>
+                        <li class="checkbox">
+                            <input type="checkbox" value="5"> Have set work hours – and stick to them
+                        </li>
+                        <li class="checkbox">
+                            <input type="checkbox" value="6"> Find time for your finances
+                        </li>
+                        <li class="checkbox">
+                            <input type="checkbox" value="7"> Manage your time, long term.
+                        </li>
+                        <li class="checkbox">
+                            <input type="checkbox" value="8"> Make your workspace work for you.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="rowTab">
+                <div id="labels">
+                    <label>Any Comments or Suggestions?</label>
+                </div>
+                <div id="rightTab">
+                    <textarea id="Comments" class="input-field" style="height:50px;resize:vertical;" placeholder="Enter your Comments here."></textarea>
+                </div>
+            </div>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </footer>
+</body>
+
+</html>
