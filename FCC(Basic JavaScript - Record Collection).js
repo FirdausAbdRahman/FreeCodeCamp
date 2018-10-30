@@ -1,4 +1,4 @@
-<!--Basic JavaScript: Record Collection-->
+//Basic JavaScript: Record Collection
 
 // Setup
 var collection = {
